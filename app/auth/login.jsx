@@ -133,7 +133,7 @@ const Login = () => {
                         </Text>
                     </TouchableOpacity>
                     <View style={styles.footerContainer}>
-                        <Text style={styles.dontHaveAccountText}>Don't have an account</Text>
+                        <Text style={styles.dontHaveAccountText}>Don't have an account?</Text>
                         <Text style={styles.footerSignup}><Link href={"/auth/signup"}>Sign up</Link></Text>
                     </View>
                 </View>
