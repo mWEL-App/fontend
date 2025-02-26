@@ -22,3 +22,9 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 - npx expo install @expo-google-fonts/roboto
 - npx expo install @expo-google-fonts/inter
 - npx expo install @expo-google-fonts/poppins
+
+## Formik is the world's most popular open source form library for React and React Native.
+- npm install formik
+
+## Yup is a schema builder for runtime value parsing and validation. 
+- npm install yup

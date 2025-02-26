@@ -19,6 +19,7 @@ const Home = () => {
     }
 
     const router = useRouter();
+    
   return (
     <SafeAreaView style={styles.container}>
         
