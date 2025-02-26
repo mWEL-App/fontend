@@ -89,6 +89,7 @@ const Login = () => {
                         <SimpleLineIcons name='lock' size={30} color={theme.colors.secondary}></SimpleLineIcons>
                         <TextInput style={styles.textInput}
                             placeholder='Enter Your Password'
+                            placeholderTextColor={theme.colors.secondary}
                             onChangeText={handleChange("password")}
                             onBlur={handleBlur("password")}
                             value={values.password}
@@ -151,13 +152,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: theme.colors.white,
-        // margin: 10,
-
+        padding:20,
     },
     backButtonWrapperView: {
-        padding: 30,
-        marginVertical: 10,
-
+        // padding: 30,
+        paddingLeft: 10,
+        marginVertical: 28,
     },
     backButtonWrapper: {
         height:40,
@@ -169,19 +169,16 @@ const styles = StyleSheet.create({
 
     },
     textContainer: {
-        marginVertical: 20,
-        marginStart: 10,
-        padding: 20,
-
+        marginVertical: 2,
+        paddingLeft: 10,
     },
     textHeading: {
-        fontSize: 32,
+        fontSize: 28,
         color: theme.colors.primary,
         fontFamily: 'Poppins_600SemiBold',
     },
     formContainer: {
-        marginTop: 20,
-        padding: 20,
+        paddingLeft: 20,
       },
     inputContainer: {
         borderColor: theme.colors.secondary,
@@ -200,13 +197,13 @@ const styles = StyleSheet.create({
 
     },
     textForgorPasswordContainer: {
-        padding: 20,
+        marginVertical: 10,
     },
     textForgotPassword: {
         textAlign: 'right',
         color: theme.colors.primary,
         fontFamily: 'Poppins_600SemiBold',
-        marginVertical: 10,
+       
     },
     errorText: {
         color: "red",
@@ -221,10 +218,8 @@ const styles = StyleSheet.create({
         backgroundColor: theme.colors.primary,
         justifyContent: "center",
         alignItems: "center",
-        marginTop: 16,
-        padding: 20,
         borderRadius: 100,
-        marginTop: 20,
+        
     },
         loginButtonText: {
         color: theme.colors.white,
@@ -239,13 +234,13 @@ const styles = StyleSheet.create({
         color: theme.colors.primary,
     }, 
     googleButtonContainer: {
+        height: 55,
         flexDirection: 'row',
         borderWidth: 2,
         borderColor: theme.colors.primary,
         borderRadius: 100,
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 10,
         gap: 10,
     },
     googleImage: {
