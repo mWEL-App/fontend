@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View , TouchableOpacity, SafeAreaView, Image} from 'react-native'
+import { StyleSheet, Text, View , TouchableOpacity, Image} from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context';
 import React from 'react'
 import { useRouter } from 'expo-router'
 import { MaterialIcons } from '@expo/vector-icons'
@@ -59,18 +60,19 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: theme.colors.white,
         alignItems: 'center',
-        
+        alignContent: 'center',
+        padding: 10,
     },
     logo: {
         height: 250,
         width: 250,       
     },
     textMain: {
-        fontSize: 30,
-        color: theme.colors.primary,
-        fontWeight: 'bold',
-        fontFamily: "Poppins_400Regular",
-        marginVertical: 30,
+        // fontSize: 30,
+        // color: theme.colors.primary,
+        // fontWeight: 'bold',
+        // fontFamily: "Poppins_400Regular",
+        // marginVertical: 30,
     },
     title: {
         fontSize: 24,

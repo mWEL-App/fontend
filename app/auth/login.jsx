@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity, TextInput, Image } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context';
 import React, { useState } from 'react'
 import { Ionicons } from '@expo/vector-icons'
 import { Link, useRouter } from 'expo-router'
@@ -60,7 +61,8 @@ const Login = () => {
         <Formik
             initialValues={{ email: "", password: "" }}
             onSubmit={(values) =>{
-                console.log("values", values)
+                router.push("/(tabs)")
+                // router.push("/home")
                 
             } }
             validationSchema={validationSchema}
@@ -108,7 +110,9 @@ const Login = () => {
                     )}
                     {/* Forgoten password link */}
                     <View style={styles.textForgorPasswordContainer}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={()=> {
+                            router.push("/auth/passwordreset")
+                        }}>
                             <Text style={styles.textForgotPassword}>
                                 Forgot Password?
                             </Text>
@@ -152,7 +156,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: theme.colors.white,
-        padding:20,
+        paddingLeft:5,
+        paddingRight: 10,
     },
     backButtonWrapperView: {
         // padding: 30,
